@@ -1,0 +1,27 @@
+    body {
+            background-color: #EAF6F6;
+    }
+    p.owner {
+        text-align: center;
+    }
+    hr {
+            border-style: dotted;
+            border-color: grey;
+            border-width: 5px 0 0 0;
+            width: 1.5%
+    }
+    h1,h3 {
+        color: #66BFBF;
+    }
+    span.owner {
+        color: #F806CC;
+    }
+    span.display {
+       color: #3D5AF1;
+    }
+    span.code {
+       color: #34656D;
+    }
+    span.baka {
+       color: #FF449F;
+    }
