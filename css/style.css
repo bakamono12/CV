@@ -62,7 +62,7 @@ a:active {
  }
 .top-container {
     background-color: #E4F9F5;
-    width: 100%;
+    width: auto;
     padding-top: 100px;
     position: relative;
     display: inline-block;
