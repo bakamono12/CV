@@ -3,8 +3,7 @@
     text-align: center;
     font-family: Merriweather,serif;
     background-color: #000;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: auto;
  }
 a:link {
   color: aqua;
@@ -63,8 +62,10 @@ a:active {
  }
 .top-container {
     background-color: #E4F9F5;
+    width: 100%;
     padding-top: 100px;
     position: relative;
+    display: inline-block;
 
 }
 .middle-container {
