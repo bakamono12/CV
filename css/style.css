@@ -1,5 +1,6 @@
  body{
     margin: 0;
+    display: inline-block;
     text-align: center;
     font-family: Merriweather,serif;
     background-color: #000;
@@ -62,7 +63,7 @@ a:active {
  }
 .top-container {
     background-color: #E4F9F5;
-    width: auto;
+    width: 100%;
     padding-top: 100px;
     position: relative;
     display: inline-block;
