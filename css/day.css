@@ -1,7 +1,8 @@
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather,serif;
+    overflow: hidden;
 }
 
 .top-container {
@@ -218,13 +219,6 @@
     content: "Python Developer";
   }
 }
-body {
-    margin: 0;
-    display: inline-block;
-    text-align: center;
-    font-family: Merriweather,serif;
-    background-color: #000;
-}
 
 .house {
   width: 100px;
@@ -426,6 +420,7 @@ body {
 a {
     color: #66bfbf;
 }
+
 @media only screen and (max-width: 600px) {
     .windmill {
         height: 0;
