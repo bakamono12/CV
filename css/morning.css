@@ -1,9 +1,9 @@
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    border: 0;
+    font-family: Merriweather,serif;
+    overflow: hidden;
 }
-
 .top-container {
   background-color: #76a5c9;
   height: 100%;
@@ -68,8 +68,8 @@
   left: 5.62em;
   top: 4.4em;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.62em rgba(32, 105, 149, 0.6),
-    0 0 0 1.25em rgba(32, 105, 149, 0.5), 0 0 0 1.9em rgba(32, 105, 149, 0.4);
+  box-shadow: 0 0 0 0.62em #76a5c9,
+    0 0 0 1.25em #76a5c9, 0 0 0 1.9em #76a5c9;
 }
 .moon:before {
   content: "";
@@ -313,11 +313,6 @@
     content: "Python Developer";
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
 
 .house {
   width: 100px;
@@ -334,7 +329,7 @@ body {
   width: 5em;
   height: 2.70em;
   border: 0;
-  background: #041524;
+  background: #000;
   left: 9px;
   top: 53px;
 }
@@ -362,7 +357,7 @@ body {
   height: 0;
   border-left: 4.71em solid transparent;
   border-right: 4.71em solid transparent;
-  border-bottom: 3.0em solid #041524;
+  border-bottom: 3.0em solid #000;
   left: -25px;
   top: 5px;
   z-index: 1;
@@ -374,7 +369,7 @@ body {
     left: 15px;
     top: 5px;
     z-index: 0;
-    background: #041524;
+    background: #000;
 }
 @keyframes smoke {
 	0% {opacity:1; border-radius:50%; transform:scale(1)}
@@ -484,7 +479,7 @@ a {
         position: absolute;
         width: 1.5em;
         height: 0;
-        border-bottom: 0.37em solid #0b2231;
+        border-bottom: 0.37em solid #000;
         border-left: 0.06em solid transparent;
         border-right: 0.06em solid transparent;
         right: -0.2em;
