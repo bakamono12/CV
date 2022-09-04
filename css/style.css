@@ -1,0 +1,133 @@
+ body{
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    font-family: Merriweather,serif;
+    background-color: #000;
+ }
+a:link {
+  color: aqua;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: cyan;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: green;
+  text-decoration: none;
+}
+ h1 {
+    margin: 0;
+    font-family: Sacramento,cursive;
+    font-size: 7rem;
+    color: #66BFBF;
+    line-height: 2em;
+
+ }
+ h2 {
+    font-family: Montserrat,sans-serif;
+    font-weight: normal;
+ }
+ h3{
+    font-family: Montserrat,sans-serif;
+    color: #11999E;
+ }
+ hr {
+    margin: 0;
+    display: none;
+ }
+ .change-content {
+    font-family: Merriweather,sans-serif;
+ }
+ p.head {
+    font-size: 2rem;
+    font-family: Merriweather,sans-serif;
+    color: black;
+ }
+  p.description {
+    font-size: 25px;
+    font-family: Merriweather,sans-serif;
+    color: white;
+ }
+.middle-container {
+    margin: 1px 0 0 0;
+
+
+}
+.bottom-container {
+    margin: 0;
+}
+.pro {
+    text-decoration: underline;
+}
+.bcloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.cloud {
+    position:absolute;
+    right: 300px;
+    top: 50px;
+}
+.change-content:after{
+   font-color: red;
+   content: '';
+   animation: text 10s infinite linear,color-change 10s infinite linear;
+   font-size: 2rem;
+  }
+
+  @keyframes text{
+    0% { content:"Programmer"; }
+    25% { content:"Web developer"; }
+    50% { content:"Backend developer"; }
+    75% { content: "Freelancer"; }
+    100% { content: "Python Developer"; }
+  }
+
+.greetings:after{
+   content: '';
+   animation: greet 10s infinite linear,color-change 10s infinite linear;
+   font-size: 2rem;
+   padding-top: 10px;
+  }
+  @keyframes color-change {
+  0% { color: #c31432; }
+  10% { color: #240b36; }
+  20% { color: #f12711; }
+  30% { color: #f5af19; }
+  40% { color: #f4791f; }
+  50% { color: #659999; }
+  60% { color: #dd3e54; }
+  70% { color: #6be585; }
+  80% { color: #009FFF; }
+  90% { color: #ec2F4B; }
+  100% { color: #FF4B2B; }
+  }
+
+  @keyframes greet{
+    0% { content:"Hello ^_^"; }
+    12.5% { content:"Hola 👋"; }
+    25% {content: "Anyoung haseyo 😊";}
+    37.5% { content:"Bonjour 🤗"; }
+    50% {content: "Zdravstvuyte  ✋.";}
+    62.5% { content: "Olá  😁";}
+    75% { content:"Guten tag 😄"; }
+    87.5% { content: "Salve 🖐"; }
+    100% { content: "Konnichiwa  🤝"; }
+  }
+
+.home {
+    font-size: 4em;
+}
