@@ -60,19 +60,19 @@
 function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime&&currentTime < 5) {
-       document.write("<link rel='stylesheet' href='/css/night.css' >");
+       document.write("<link rel='stylesheet' href='css/night.css' >");
       }
       if (5 <= currentTime&&currentTime < 7) {
-       document.write("<link rel='stylesheet' href='/css/morning.css'>");
+       document.write("<link rel='stylesheet' href='css/morning.css'>");
       }
       if (7 <= currentTime&&currentTime < 16) {
-       document.write("<link rel='stylesheet' href='/css/day.css'>");
+       document.write("<link rel='stylesheet' href='css/day.css'>");
       }
       if (16 <= currentTime&&currentTime < 19) {
-       document.write("<link rel='stylesheet' href='/css/evening.css'>");
+       document.write("<link rel='stylesheet' href='css/evening.css'>");
       }
       if (19 <= currentTime&&currentTime <= 24) {
-       document.write("<link rel='stylesheet' href='/css/night.css'>");
+       document.write("<link rel='stylesheet' href='css/night.css'>");
       }
 }
 getStylesheet();
@@ -104,7 +104,7 @@ setTimeout(function(){
     <div class="moon"></div>
     <div class="mountains"></div>
     <div class="land">
-        <img class="tumbleweed" src="./images/tumbleweed.png" alt="tumbleweed">
+        <img class="tumbleweed" src="images/tumbleweed.png" alt="tumbleweed">
         <div class="windmill">
             <div class="light"></div>
             <div class="blades"></div>
