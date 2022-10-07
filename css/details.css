@@ -1,0 +1,307 @@
+body {
+    background-color: #131316;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat-bold', sans-serif;
+
+}
+
+/* All sections */
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 5s;
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    padding: 3%;
+}
+
+/* carousel */
+#hobbies {
+    padding:5% 7%;
+}
+.cara-img {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 40%;
+    height: 30%;
+}
+
+/* logos */
+.logos {
+    display: flex;
+}
+
+.logos:nth-child(2) {
+    transition-delay: 100ms;
+
+}
+
+.logos:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.logos:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.logos:nth-child(5) {
+    transition-delay: 400ms;
+}
+
+.logos:nth-child(6) {
+    transition-delay: 500ms;
+}
+
+
+.logo {
+    background-color: #363535;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .logos {
+        display: flex;
+
+    }
+
+    .logo:nth-child(2) {
+        transition-delay: 100ms;
+    }
+
+    .logo:nth-child(3) {
+        transition-delay: 200ms;
+    }
+
+    .logo:nth-child(4) {
+        transition-delay: 300ms;
+    }
+
+    .logo:nth-child(5) {
+        transition-delay: 400ms;
+    }
+
+    .logo:nth-child(6) {
+        transition-delay: 500ms;
+    }
+
+    .logo {
+        background-color: #363535;
+        border-radius: 0.9rem;
+        padding: 0.5rem;
+        margin: 0 0.35rem;
+
+    }
+
+    .img {
+        width: 42px;
+        height: 42px;
+        aspect-ratio: auto;
+    }
+    h3.h-caption{
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .logo {
+        background-color: #363535;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 0 -0.5rem;
+    }
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #00ffff);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* background: linear-gradient(transparent,#00ffff,#30ff00,#fc44ce,#e7ff5d); */
+    background: linear-gradient(transparent, #ff6f6f);
+}
+
+
+/* bootstrap card */
+
+.card {
+    background-color: #fff0;
+}
+
+.row {
+    --bs-gutter-y: 0.5rem;
+}
+
+/* footer */
+section.footer {
+    min-height: 5vh;
+    background-color: #000000;
+}
+
+div.contact {
+    padding: 2%;
+}
+
+div.logos {
+    padding: 2%;
+}
+
+.footer-icon {
+    margin: 8px;
+}
+
+.footer-icon:hover {
+    color: #00ffff;
+}
+
+.link:hover {
+    color: #00ffff;
+}
+
+.footer-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a.footer-link:hover {
+    color: #00ffff;
+}
+
+i.contact {
+    color: red;
+}
+
+i.contact:hover {
+    color: #00ffff;
+}
+
+/* Headings greet */
+.greetings {
+    padding-top: 5%;
+}
+
+.greetings:after {
+    content: '';
+    animation: greet 10s infinite linear, color-change 10s infinite linear;
+    font-size: 2rem;
+}
+
+@keyframes color-change {
+    0% {
+        color: #ff0808;
+    }
+
+    10% {
+        color: #ff993f;
+    }
+
+    20% {
+        color: #ffff3a;
+    }
+
+    30% {
+        color: #d0ff58;
+    }
+
+    40% {
+        color: #43ffa7;
+    }
+
+    50% {
+        color: #4cfffc;
+    }
+
+    60% {
+        color: #6da2ff;
+    }
+
+    70% {
+        color: #de74ff;
+    }
+
+    80% {
+        color: #ff62d0;
+    }
+
+    90% {
+        color: #ff39d4;
+    }
+
+    100% {
+        color: #ff6161;
+    }
+}
+
+@keyframes greet {
+    0% {
+        content: "Hello (*v*)";
+    }
+
+    12.5% {
+        content: "Hola (｡◕‿◕｡)";
+    }
+
+    25% {
+        content: "Anyoung haseyo (ᵔᴥᵔ)";
+    }
+
+    37.5% {
+        content: "Bonjour ʕ •ᴥ•ʔ";
+    }
+
+    50% {
+        content: "Zdravstvuyte (^◡^ )";
+    }
+
+    62.5% {
+        content: "Olá (>‿◠)";
+    }
+
+    75% {
+        content: "Guten tag ≧◠‿◠≦";
+    }
+
+    87.5% {
+        content: "Salve =^.^=";
+    }
+
+    100% {
+        content: "Konnichiwa ^(OvO)^";
+    }
+}
